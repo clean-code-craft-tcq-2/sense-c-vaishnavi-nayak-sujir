@@ -11,7 +11,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     {
         sum= sum+ numberset[i];
     }
-    s.average = (sum / setlength
+    s.average = sum / setlength;
 }
 
 int emailAlertCallCount = 0;
