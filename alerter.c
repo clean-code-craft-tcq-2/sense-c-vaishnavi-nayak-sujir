@@ -1,16 +1,14 @@
-void  emailAlerter(int maxval, int maxthreshold)
+void  emailAlerter()
 {
-  if(maxval > maxthreshold)
-  {
+
     emailAlertCallCount 1;
-  }
+
   
 }
-void  ledAlerter(int maxval, int maxthreshold)
+void  ledAlerter()
 {
-  if(maxval > maxthreshold)
-  {
+
     ledAlertCallCount 1;
-  }
+
   
 }
