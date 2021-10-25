@@ -8,5 +8,6 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
 	float min;
 	float max;
 	};
+ extern struct Stats s;
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
