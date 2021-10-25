@@ -2,22 +2,23 @@
 #include <math.h>
 struct Stats compute_statistics(const float* numberset, int setlength) {
    struct Stats s;
-    s.average = 0;
+
 	if (setlength==0)
 	{
-		s.average=nanf("");
-		s.max= nanf("");
-		s.min=nanf("");
+		s.average=NAN;
+		s.max= NAN;
+		s.min=NAN;
 	}
     else
 	{
+	s.average = 0;
 	s.min = numberset[0];
-    s.max = numberset[0];
-    int i=0;
-    float sum=0.0;
-    for (i=0;i<setlength;i++)
-    {
-        sum= sum+ numberset[i];
+    	s.max = numberset[0];
+    	int i=0;
+    	float sum=0.0;
+    	for (i=0;i<setlength;i++)
+    	{
+       	 	sum= sum+ numberset[i];
 		if(numberset[i] > s.max)
 		{
 		s.max = numberset[i];
@@ -28,7 +29,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 		}
 		
 		
-    }
+    	}
    	 s.average = sum / setlength;
 	}
 	return s;
