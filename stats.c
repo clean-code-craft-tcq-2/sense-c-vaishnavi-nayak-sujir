@@ -5,9 +5,9 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = 0;
 	if (setlength==0)
 	{
-		s.average=NAN;
-		s.max= NAN;
-		s.min=NAN;
+		s.average=nanf("");
+		s.max= nanf("");
+		s.min=nanf("");
 	}
     else
 	{
